@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hemanth Avagadda — Portfolio</title>
+
+  <!-- Google Fonts (loads online; falls back to system fonts offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════ NAVBAR ════ -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">
+        <span class="acc">&lt;</span>HA<span class="acc">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"            class="nl">Home</a></li>
+        <li><a href="#about"           class="nl">About</a></li>
+        <li><a href="#skills"          class="nl">Skills</a></li>
+        <li><a href="#education"       class="nl">Education</a></li>
+        <li><a href="#projects"        class="nl">Projects</a></li>
+        <li><a href="#extracurricular" class="nl">Activities</a></li>
+        <li><a href="#contact"         class="nl">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="themeBtn" class="icon-btn" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button id="menuBtn" class="icon-btn burger" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════ HERO ════ -->
+  <section id="home" class="hero">
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-glow g3"></div>
+
+    <div class="container hero-flex">
+      <!-- Left text -->
+      <div class="hero-text">
+        <p class="hello"><span class="live-dot"></span> Hello, I'm</p>
+        <h1 class="hname">Hemanth<br><span class="grad-text">Avagadda</span></h1>
+        <p class="hrole">
+          <span class="bracket">&lt;</span><span id="typed"></span><span class="caret">|</span><span class="bracket">/&gt;</span>
+        </p>
+        <p class="hdesc">
+          CS Student from <strong>India 🇮🇳</strong> · Passionate about
+          <strong>Artificial Intelligence</strong>, Web Development, and
+          building solutions that make a real difference.
+        </p>
+        <div class="hbtns">
+          <a href="#projects" class="btn btn-fill">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#"         class="btn btn-outline" id="resumeBtn">
+            <i class="fa-solid fa-file-arrow-down"></i> Resume
+          </a>
+        </div>
+        <div class="hsocials">
+          <a href="https://github.com/"   target="_blank" class="soc" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="soc" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right code window -->
+      <div class="hero-code">
+        <div class="cwin">
+          <div class="cwin-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="cwin-title">hemanth.py</span>
+          </div>
+          <div class="cwin-body">
+<pre><span class="pk">class</span> <span class="pc">Developer</span>:
+    <span class="pk">def</span> <span class="pf">__init__</span>(self):
+        self.name     = <span class="ps">"Hemanth Avagadda"</span>
+        self.role     = <span class="ps">"CS Student"</span>
+        self.location = <span class="ps">"India 🇮🇳"</span>
+        self.loves    = [<span class="ps">"AI"</span>, <span class="ps">"Web Dev"</span>, <span class="ps">"Cricket"</span>]
+
+    <span class="pk">def</span> <span class="pf">mission</span>(self):
+        <span class="pk">return</span> <span class="ps">"Innovate &amp; Inspire"</span>
+
+<span class="pcmt"># Running...</span>
+<span class="po">&gt;&gt;&gt;</span> Developer().<span class="pf">mission</span>()
+<span class="po">&gt;</span> <span class="ps">'Innovate &amp; Inspire'</span> <span class="caret">▌</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ════ ABOUT ════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">About <em>Me</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="av-outer"></div>
+          <div class="av-mid"></div>
+          <div class="av-inner">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <span class="av-badge av-b1"><i class="fa-brands fa-python"></i></span>
+          <span class="av-badge av-b2"><i class="fa-solid fa-brain"></i></span>
+          <span class="av-badge av-b3"><i class="fa-brands fa-js"></i></span>
+          <span class="av-badge av-b4"><i class="fa-solid fa-cricket-bat-ball"></i></span>
+        </div>
+
+        <div class="about-body">
+          <p class="ab-lead">
+            I'm <strong>Hemanth Avagadda</strong>, a Computer Science student passionate about
+            Artificial Intelligence, Web Development, and building innovative technology solutions.
+          </p>
+          <p class="ab-text">
+            I enjoy solving real-world problems through programming and continuously expanding my
+            skill set. Whether it's debugging C pointers or experimenting with ML models —
+            I'm always learning, always building.
+          </p>
+          <ul class="ab-facts">
+            <li><i class="fa-solid fa-location-dot"></i><span>India</span></li>
+            <li><i class="fa-solid fa-graduation-cap"></i><span>B.Tech CSE · 2023 – 2027</span></li>
+            <li><i class="fa-solid fa-microchip"></i><span>AI &amp; Web Enthusiast</span></li>
+            <li><i class="fa-solid fa-cricket-bat-ball"></i><span>University Cricket Player</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-fill" style="margin-top:1.75rem">
+            Say Hello <i class="fa-regular fa-hand-wave"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SKILLS ════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">My <em>Skills</em></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Bars -->
+        <div class="skill-bars">
+          <h3 class="skill-sub">Proficiency</h3>
+
+          <div class="sk"><div class="sk-lbl"><span>HTML &amp; CSS</span><span class="sk-pct">88%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="88"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>C Programming</span><span class="sk-pct">85%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Git &amp; GitHub</span><span class="sk-pct">82%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="82"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Data Structures (C)</span><span class="sk-pct">80%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Python</span><span class="sk-pct">78%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="78"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>JavaScript</span><span class="sk-pct">75%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="75"></div></div></div>
+
+          <div class="sk"><div class="sk-lbl"><span>Machine Learning</span><span class="sk-pct">65%</span></div>
+            <div class="sk-track"><div class="sk-fill" data-w="65"></div></div></div>
+        </div>
+
+        <!-- Icons -->
+        <div class="skill-icons">
+          <h3 class="skill-sub">Tech Stack</h3>
+          <div class="ti-grid">
+            <div class="ti"><i class="fa-solid fa-c"></i><span>C</span></div>
+            <div class="ti"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="ti"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            <div class="ti"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="ti"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="ti"><i class="fa-solid fa-brain"></i><span>ML</span></div>
+            <div class="ti"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+            <div class="ti"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EDUCATION ════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">Education</h2>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon-col">
+          <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="edu-line"></div>
+        </div>
+        <div class="edu-info">
+          <span class="edu-year">2023 — 2027</span>
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <p class="edu-branch">Computer Science and Engineering</p>
+          <p class="edu-desc">
+            Studying core CS fundamentals — algorithms, data structures, AI/ML, operating systems,
+            computer networks, and web technologies. Actively participating in tech events and university cricket.
+          </p>
+          <div class="edu-chips">
+            <span>Data Structures</span>
+            <span>Algorithms</span>
+            <span>AI / ML</span>
+            <span>Web Development</span>
+            <span>Python</span>
+            <span>C Programming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ PROJECTS ════ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">My <em>Projects</em></h2>
+      </div>
+
+      <div class="proj-grid">
+
+        <!-- Todo App -->
+        <div class="proj-card">
+          <div class="proj-top">
+            <div class="proj-ico ico-cyan"><i class="fa-solid fa-list-check"></i></div>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="plink" aria-label="Live"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-name">Todo App</h3>
+          <p class="proj-desc">
+            A responsive task manager with add, delete, complete, and filter features.
+            Data persists via <code>localStorage</code> — built with pure HTML, CSS &amp; JavaScript.
+          </p>
+          <div class="proj-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span>
+          </div>
+        </div>
+
+        <!-- ATHLETEX AI -->
+        <div class="proj-card proj-featured">
+          <span class="feat-badge">⭐ Featured</span>
+          <div class="proj-top">
+            <div class="proj-ico ico-indigo"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="proj-links">
+              <a href="#" class="plink" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="plink" aria-label="Live"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="proj-name">ATHLETEX AI</h3>
+          <p class="proj-desc">
+            An AI-powered platform that analyzes athlete performance data and delivers actionable
+            training insights. Uses machine learning to identify patterns and optimize performance metrics.
+          </p>
+          <div class="proj-stack">
+            <span>Python</span><span>Machine Learning</span><span>AI</span><span>Web Dev</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EXTRACURRICULAR ════ -->
+  <section id="extracurricular" class="section">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">Beyond <em>Code</em></h2>
+      </div>
+
+      <div class="extra-grid">
+        <!-- Main cricket card -->
+        <div class="extra-main">
+          <div class="cricket-card">
+            <div class="cc-icon"><i class="fa-solid fa-cricket-bat-ball"></i></div>
+            <div class="cc-body">
+              <span class="cc-live">● Active</span>
+              <h3>University Cricket Player</h3>
+              <p>
+                Representing my university on the cricket pitch has shaped my character.
+                Team strategy, pressure performance, and disciplined practice — all directly
+                translate to how I approach software engineering challenges.
+              </p>
+            </div>
+          </div>
+          <div class="traits">
+            <span class="trait"><i class="fa-solid fa-users"></i> Teamwork</span>
+            <span class="trait"><i class="fa-solid fa-chess"></i> Strategy</span>
+            <span class="trait"><i class="fa-solid fa-fire"></i> Discipline</span>
+            <span class="trait"><i class="fa-solid fa-crown"></i> Leadership</span>
+          </div>
+        </div>
+
+        <!-- Side cards -->
+        <div class="extra-side">
+          <div class="extra-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <h4>Self-Learning</h4>
+              <p>Following AI/ML trends, online courses, and personal projects to stay sharp.</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <h4>Open Source</h4>
+              <p>Exploring real-world codebases on GitHub and learning from production code.</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <i class="fa-solid fa-code-branch"></i>
+            <div>
+              <h4>DSA Practice</h4>
+              <p>Regular problem solving to strengthen algorithmic thinking and coding fluency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CONTACT ════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="sec-hd">
+        <span class="sec-num">06</span>
+        <h2 class="sec-title">Let's <em>Connect</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info">
+          <p class="ci-intro">
+            Open to internships, collaborations, and conversations about tech.
+            Don't hesitate to reach out!
+          </p>
+          <ul class="ci-list">
+            <li>
+              <span class="ci-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>Location</strong><span>India</span></div>
+            </li>
+            <li>
+              <span class="ci-icon"><i class="fa-brands fa-github"></i></span>
+              <div><strong>GitHub</strong><a href="https://github.com/" target="_blank">github.com/hemanthavagadda</a></div>
+            </li>
+            <li>
+              <span class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div><strong>LinkedIn</strong><a href="https://linkedin.com/" target="_blank">linkedin.com/in/hemanthavagadda</a></div>
+            </li>
+          </ul>
+          <div class="ci-socials">
+            <a href="https://github.com/"   target="_blank" class="soc" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" class="soc" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="fg">
+            <label for="fName">Name *</label>
+            <input type="text"  id="fName"  name="name"    placeholder="Your name"       required>
+            <span class="ferr" id="errName"></span>
+          </div>
+          <div class="fg">
+            <label for="fEmail">Email *</label>
+            <input type="email" id="fEmail" name="email"   placeholder="your@email.com"  required>
+            <span class="ferr" id="errEmail"></span>
+          </div>
+          <div class="fg">
+            <label for="fSub">Subject</label>
+            <input type="text"  id="fSub"   name="subject" placeholder="What's this about?">
+          </div>
+          <div class="fg">
+            <label for="fMsg">Message *</label>
+            <textarea id="fMsg" name="message" rows="5" placeholder="Your message…" required></textarea>
+            <span class="ferr" id="errMsg"></span>
+          </div>
+          <button type="submit" class="btn btn-fill btn-block">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="ftoast" id="fToast"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="acc">&lt;</span>HA<span class="acc">/&gt;</span></a>
+      <p>© 2025 Hemanth Avagadda · Built with <i class="fa-solid fa-heart" style="color:#f87171"></i> &amp; Coffee</p>
+      <div class="f-socials">
+        <a href="https://github.com/"   target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="btt" class="btt" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
